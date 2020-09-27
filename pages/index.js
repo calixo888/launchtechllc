@@ -1,3 +1,4 @@
+import { NextSeo } from 'next-seo';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInstagram, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
@@ -6,6 +7,11 @@ import projects from '../data/projects.js';
 const index = () => {
   return (
     <div>
+      <NextSeo
+        title="Launch Tech LLC - Scaled applications to impact the world."
+        description="Launch Tech LLC is a SaaS product holding company for scaled applications aiming to impact the world. We create, incubate, and accelerate the growth of different software applications and deploy them for the world to use!"
+      />
+
       <header>
         <div className="container text-center">
           <h1 className="header-primary">Launch Tech LLC</h1>

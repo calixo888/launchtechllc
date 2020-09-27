@@ -8,20 +8,5 @@
     padding: 15px;
     border-radius: 8px;
     box-shadow: $box-shadow;
-
-    .tags {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-
-      .tag {
-        border: 2px solid $color-primary;
-        border-radius: 50px;
-        padding: 1.5px 10px;
-        color: $color-primary;
-        margin-right: 2.5px;
-        margin-bottom: 2.5px;
-      }
-    }
   }
 }

@@ -1,0 +1,35 @@
+.about-grid {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-gap: 50px;
+
+  & img {
+    border-radius: 50%;
+    border: 7.5px solid $color-primary;
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  .about {
+
+    .social {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, 25px);
+      grid-gap: 10px;
+
+      & svg {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: repeat(auto-fill, 100%) !important;
+
+    & img {
+      width: 50%;
+    }
+  }
+}

@@ -16,43 +16,19 @@ export default [
     ],
     featured: true
   },{
-    title: "GroceryMeals",
-    description: "GroceryMeals is an online platform that gathers the best grocery prices and matches them with recipes you can make at home.",
-    link: "http://www.grocerymeals.me/",
+    title: "NPO Core (acquired by NovaCrypt)",
+    description: "NPO Core is a curated list of nonprofit organizations, allowing anyone to find the perfect nonprofit to get involved with and get in contact!",
+    link: "https://npocore.com/",
     tags: [
-      "Python", "Django", "Selenium Webdriver", "SQLite", "spoonacularAPI", "NutritionX API"
+      "Node.js", "Express", "MongoDB", "React.js", "Sass"
     ],
     featured: false
   },{
-    title: "GroceryPricerAPI",
-    description: "A grocery pricing data API, where all grocery pricing data scraped using scripted webscraping algorithms from grocery providers.",
-    link: "http://www.grocerypricerapi.online/",
+    title: "w3hacks (acquired by NovaCrypt)",
+    description: "A platform where anyone can learn to code through real-world practices. Acquired by NovaCrypt.",
+    link: "http://w3hacks.com/",
     tags: [
-      "Python", "Django", "Selenium Webdriver", "SQLite", "BeautifulSoup"
-    ],
-    featured: false
-  },{
-    title: "HackCollab",
-    description: "HackCollab is a web-based hackathon organizer, allowing competitiors to form teams and discuss project ideas before the event even starts.",
-    link: "http://www.hackcollab.io/",
-    tags: [
-      "Python", "Django", "SQLite"
-    ],
-    featured: false
-  },{
-    title: "SelectiveChat",
-    description: "SelectiveChat lets you commuicate with your friends with nothing more than an Internet connection. No need for an email or an account.",
-    link: "http://www.selectivechat.com/",
-    tags: [
-      "Python", "Django", "Daphne", "Redis"
-    ],
-    featured: false
-  },{
-    title: "SAPI",
-    description: "A completely free API service to store sample data for prototyping and test data during development, as well as single-variable metrics.",
-    link: "http://www.sapi.host/",
-    tags: [
-      "Python", "Django", "SQLite"
+      "Python", "Django", "PostgreSQL"
     ],
     featured: false
   }

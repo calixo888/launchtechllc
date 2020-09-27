@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInstagram, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import projects from '../data/projects.js';
 
 const index = () => {
   return (
@@ -8,7 +9,7 @@ const index = () => {
       <header>
         <div className="container text-center">
           <h1 className="header-primary">Launch Tech LLC</h1>
-          <p>We build the world's best SaaS products!</p>
+          <p>Scaled applications to impact the world.</p>
         </div>
       </header>
 
@@ -16,15 +17,15 @@ const index = () => {
         <div className="stats-grid">
           <div className="stat">
             <span className="title">Interactions</span>
-            <span className="number">30,000</span>
+            <span className="number">30,000+</span>
           </div>
           <div className="stat">
-            <span className="title">Interactions</span>
-            <span className="number">30,000</span>
+            <span className="title">Users</span>
+            <span className="number">2,000+</span>
           </div>
           <div className="stat">
-            <span className="title">Interactions</span>
-            <span className="number">30,000</span>
+            <span className="title">Projects</span>
+            <span className="number">{projects.length}</span>
           </div>
         </div>
       </div>
@@ -33,17 +34,19 @@ const index = () => {
         <div className="container">
           <h1 className="header-secondary mb-4">Projects</h1>
           <div className="projects-grid">
-            <div className="project">
-              <h3 className="header-fourth">Title</h3>
-              <p>Description</p>
-              <div className="tags">
-                <div className="tag">Tag</div>
-                <div className="tag">Tag</div>
-                <div className="tag">Tag</div>
-                <div className="tag">Tag</div>
-                <div className="tag">Tag</div>
-              </div>
-            </div>
+            {projects.map((project, i) => (
+              <a href={project.link} target="_blank">
+                <div className="project">
+                  <h3 className="header-fourth">{project.title}</h3>
+                  <p>{project.description}</p>
+                  <div className="tags">
+                    {project.tags.map((tag, i) => (
+                      <span className="tag">{tag}</span>
+                    ))}
+                  </div>
+                </div>
+              </a>
+            ))}
           </div>
         </div>
       </section>
@@ -54,16 +57,15 @@ const index = () => {
           <div className="about-grid">
             <img src="/img/people/calix.jpeg" alt="Calix Huang - Launch Tech LLC" />
             <div className="about">
-              <h2 className="header-fourth">Calix Huang</h2>
+              <h2 className="header-tertiary">Calix Huang</h2>
               <div className="tags my-2">
-                <div className="tag">Tag</div>
-                <div className="tag">Tag</div>
-                <div className="tag">Tag</div>
-                <div className="tag">Tag</div>
-                <div className="tag">Tag</div>
+                <div className="tag">@calixo888</div>
+                <div className="tag">Full-stack developer</div>
+                <div className="tag">Startup engineer</div>
+                <div className="tag">Entrepreneur</div>
               </div>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Hey there! My name is Calix, and I'm a self-taught startup engineer, with a focus on full-stack web development. I believe in learning by doing, so I try to model my projects around useful ideas that can be deployed to users around the globe. My skills in full-stack development allow me to take a project from an idea to a product!
               </p>
               <div className="social">
                 <a href="https://www.instagram.com/calixo888/" target="_blank"><FontAwesomeIcon icon={faInstagram}/></a>
@@ -75,6 +77,10 @@ const index = () => {
           </div>
         </div>
       </section>
+
+      <div className="copyright">
+        <small>&copy; 2020 Launch Tech LLC. All rights reserved.</small>
+      </div>
     </div>
   )
 }

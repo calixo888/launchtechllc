@@ -1,0 +1,22 @@
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 30px;
+
+  .stat {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.15);
+    text-align: center;
+
+    & span {
+      display: block;
+    }
+
+    .number {
+      font-weight: bold;
+      font-size: 40px;
+    }
+  }
+}

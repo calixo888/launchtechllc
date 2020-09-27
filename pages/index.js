@@ -7,35 +7,34 @@ const index = () => {
     <div>
       <header>
         <div className="container text-center">
-          <h1>Launch Tech LLC</h1>
+          <h1 className="header-primary">Launch Tech LLC</h1>
           <p>We build the world's best SaaS products!</p>
         </div>
       </header>
 
-      <section>
-        <div className="container">
-          <div className="stats-grid">
-            <div className="stat">
-              <span className="title">Interactions</span>
-              <span className="number">30,000</span>
-            </div>
-            <div className="stat">
-              <span className="title">Interactions</span>
-              <span className="number">30,000</span>
-            </div>
-            <div className="stat">
-              <span className="title">Interactions</span>
-              <span className="number">30,000</span>
-            </div>
+      <div className="container py-4">
+        <div className="stats-grid">
+          <div className="stat">
+            <span className="title">Interactions</span>
+            <span className="number">30,000</span>
+          </div>
+          <div className="stat">
+            <span className="title">Interactions</span>
+            <span className="number">30,000</span>
+          </div>
+          <div className="stat">
+            <span className="title">Interactions</span>
+            <span className="number">30,000</span>
           </div>
         </div>
-      </section>
+      </div>
 
       <section>
         <div className="container">
+          <h1 className="header-secondary mb-4">Projects</h1>
           <div className="projects-grid">
             <div className="project">
-              <h3>Title</h3>
+              <h3 className="header-fourth">Title</h3>
               <p>Description</p>
               <div className="tags">
                 <div className="tag">Tag</div>
@@ -51,10 +50,11 @@ const index = () => {
 
       <section>
         <div className="container">
+          <h1 className="header-secondary mb-4">About</h1>
           <div className="about-grid">
             <img src="/img/people/calix.jpeg" alt="Calix Huang - Launch Tech LLC" />
             <div className="about">
-              <h2>Calix Huang</h2>
+              <h2 className="header-fourth">Calix Huang</h2>
               <div className="tags my-2">
                 <div className="tag">Tag</div>
                 <div className="tag">Tag</div>

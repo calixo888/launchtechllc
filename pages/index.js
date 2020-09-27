@@ -42,7 +42,7 @@ const index = () => {
           <div className="projects-grid">
             {projects.map((project, i) => (
               <a href={project.link} target="_blank">
-                <div className="project">
+                <div className={`project ${project.featured ? "featured" : ""}`}>
                   <h3 className="header-fourth">{project.title}</h3>
                   <p>{project.description}</p>
                   <div className="tags">

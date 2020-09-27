@@ -26,6 +26,24 @@ const index = () => {
           </div>
         </div>
       </section>
+
+      <section>
+        <div className="container">
+          <div className="projects-grid">
+            <div className="project">
+              <h3>Title</h3>
+              <p>Description</p>
+              <div className="tags">
+                <div className="tag">Tag</div>
+                <div className="tag">Tag</div>
+                <div className="tag">Tag</div>
+                <div className="tag">Tag</div>
+                <div className="tag">Tag</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   )
 }

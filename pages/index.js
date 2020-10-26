@@ -43,8 +43,29 @@ const index = () => {
             {projects.map((project, i) => (
               <a href={project.link} target="_blank">
                 <div className={`project ${project.featured ? "featured" : ""}`}>
-                  <h3 className="header-fourth">{project.title}</h3>
-                  <p>{project.description}</p>
+                  <div>
+                    <h3 className="header-fourth" style={{
+                      display: "flex",
+                      alignItems: "center"
+                    }}>
+                      {project.title}
+                      <div className="ml-auto tags">
+                        {project.featured ?
+                          <span className="tag">FEATURED</span> : ""
+                        }
+                        {project.acquired ?
+                          <span className="tag acquired">ACQUIRED</span> : ""
+                        }
+                        {project.deprecated ?
+                          <span className="tag deprecated">DEPRECATED</span> : ""
+                        }
+                        {project.tag ?
+                          <span className="tag">{project.tag}</span> : ""
+                        }
+                      </div>
+                    </h3>
+                    <p>{project.description}</p>
+                  </div>
                   <div className="tags">
                     {project.tags.map((tag, i) => (
                       <span className="tag">{tag}</span>
@@ -72,6 +93,9 @@ const index = () => {
               </div>
               <p>
                 Hey there! My name is Calix, and I'm a self-taught startup engineer, with a focus on full-stack web development. I believe in learning by doing, so I try to model my projects around useful ideas that can be deployed to users around the globe. My skills in full-stack development allow me to take a project from an idea to a product!
+              </p>
+              <p>
+                Launch Tech LLC is my personal software holding company, and this is where I build, host, deploy, and scale all of my personal projects :)
               </p>
               <div className="social">
                 <a href="https://www.instagram.com/calixo888/" target="_blank"><FontAwesomeIcon icon={faInstagram}/></a>

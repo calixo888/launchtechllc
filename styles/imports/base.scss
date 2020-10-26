@@ -41,6 +41,18 @@ svg {
     color: $color-primary;
     margin-right: 2.5px;
     margin-bottom: 2.5px;
+    font-size: 15px;
+    font-weight: normal;
+  }
+
+  .acquired {
+    border-color: rgb(138, 172, 23);
+    color: rgb(138, 172, 23);
+  }
+
+  .deprecated {
+    border-color: rgb(209, 54, 54);
+    color: rgb(209, 54, 54);
   }
 }
 

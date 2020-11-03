@@ -18,13 +18,15 @@ const index = () => {
         description="Launch Tech LLC is a SaaS product holding company for scaled applications aiming to impact the world. We create, incubate, and accelerate the growth of different software applications and deploy them for the world to use!"
       />
 
-      <nav className="navbar navbar-expand-lg navbar-light">
-        <div className="container">
-          <a href="/" className="navbar-brand">
-            <img style={{ width: "200px" }} src="/img/logos/logo-light.png" alt="Launch Tech LLC Logo" />
-          </a>
-        </div>
-      </nav>
+      {
+        // <nav className="navbar navbar-expand-lg navbar-light">
+        //   <div className="container">
+        //     <a href="/" className="navbar-brand">
+        //       <img style={{ width: "200px" }} src="/img/logos/logo-light.png" alt="Launch Tech LLC Logo" />
+        //     </a>
+        //   </div>
+        // </nav>
+      }
 
       <header>
         <div className="container text-center">

@@ -1,14 +1,25 @@
 export default [
   {
+    title: "Hours",
+    description: "A free productivity tool that allows anyone to be productive with their friends. It displays everything in real-time, allowing participants to work together, complete tasks, and achieve flow state.",
+    link: "https://hours.zone",
+    tags: [
+      "Node.js", "Express", "Next.js", "React.js", "Socket.io", "MongoDB"
+    ],
+    featured: true,
+    acquired: false,
+    tag: "v1.5",
+    deprecated: false
+  },{
     title: "Ano.js",
     description: "An open-source web animation library allowing custom, interactive animations to be added to a website with just 2 lines of code.",
     link: "https://anojs.com",
     tags: [
       "Node.js", "Express", "MongoDB", "GitHub API", "HTML5 Canvas", "jsDelivr"
     ],
-    featured: true,
+    featured: false,
     acquired: false,
-    tag: undefined,
+    tag: "v2.3",
     deprecated: false
   },{
     title: "The Bot Gang",
@@ -17,20 +28,9 @@ export default [
     tags: [
       "Next.js", "React.js", "MongoDB", "Slack & Discord API", "Vercel Hosting"
     ],
-    featured: true,
-    acquired: false,
-    tag: undefined,
-    deprecated: false
-  },{
-    title: "Hours",
-    description: "A free accountability-based productivity tool to help people be highly-productive in short time periods.",
-    link: "https://hoursapp.ml",
-    tags: [
-      "Node.js", "Express", "Next.js", "React.js", "MongoDB"
-    ],
     featured: false,
     acquired: false,
-    tag: "UNDER CONSTRUCTION",
+    tag: "v1.0",
     deprecated: false
   },{
     title: "NPO Core",

@@ -4,11 +4,11 @@ export default [
     description: "A free productivity tool that allows anyone to be productive with their friends. It displays everything in real-time, allowing participants to work together, complete tasks, and achieve flow state.",
     link: "https://hours.zone",
     tags: [
-      "Node.js", "Express", "Next.js", "React.js", "Socket.io", "MongoDB"
+      "Node.js", "Express", "Next.js", "React.js", "Socket.io", "MongoDB", "Sass"
     ],
     featured: true,
     acquired: false,
-    tag: "v1.5",
+    tag: "v1.10",
     deprecated: false
   },{
     title: "Ano.js",

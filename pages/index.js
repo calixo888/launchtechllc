@@ -57,13 +57,15 @@ const index = () => {
 
       <div className="logo-banner">
         <div className="container">
-          <div className="label">Happy users from</div>
+          {
+            // <div className="label">Happy users from</div>
+          }
           <div className="logo-grid">
-            <span>TKS</span>
-            <span>LaunchX</span>
-            <span>BEAM</span>
-            <span>Beeznests</span>
-            <span>Microsoft</span>
+            <img className="tks" src="/img/users/tks.png" />
+            <img className="launchx" src="/img/users/launchx.png" />
+            <img className="leangap" src="/img/users/leangap.png" />
+            <img className="cvt" src="/img/users/cvt.png" />
+            <img className="beeznests" src="/img/users/beeznests.png" />
           </div>
         </div>
       </div>

@@ -3,8 +3,7 @@ header {
 }
 
 .logo-banner {
-  background-color: #eee;
-  padding: 15px 0;
+  background-color: #f3f3f3;
 
   .label {
     font-size: 14px;
@@ -15,10 +14,43 @@ header {
   }
 
   .logo-grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     justify-items: center;
+    justify-content: space-around;
+
+    & img {
+      filter: grayscale(100%);
+      opacity: 0.8;
+      margin: 15px;
+    }
+
+    .tks {
+      width: 100px;
+    }
+
+    .launchx {
+      width: 140px;
+    }
+
+    .leangap {
+      width: 120px;
+    }
+
+    .cvt {
+      width: 180px;
+    }
+
+    .beeznests {
+      width: 90px;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .logo-grid {
+    grid-template-columns: repeat(auto-fill, minmax(175px, 1fr)) !important;
   }
 }
 

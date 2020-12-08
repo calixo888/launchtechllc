@@ -1,7 +1,35 @@
 header {
-  background-color: $color-primary;
+  background-color: $color-tertiary;
+}
 
-  & * {
-    color: white;
+.logo-banner {
+  background-color: #eee;
+  padding: 15px 0;
+
+  .label {
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #aaa;
+    margin-bottom: 15px;
+  }
+
+  .logo-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 30px;
+    justify-items: center;
+  }
+}
+
+footer {
+  background-color: white;
+  padding: 30px;
+  box-shadow: $box-shadow;
+
+  .social-media {
+    display: grid;
+    grid-template-columns: repeat(4, 25px);
+    grid-gap: 10px;
   }
 }

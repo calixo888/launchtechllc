@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import '../styles/main.scss';
+import 'swiper/swiper.scss';
 
 const _app = ({ Component, pageProps }) => {
   return (

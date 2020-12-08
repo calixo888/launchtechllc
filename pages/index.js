@@ -1,9 +1,13 @@
 import Head from "next/head";
 import { NextSeo } from 'next-seo';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faInstagram, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram, faLinkedin, faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import projects from '../data/projects.js';
+import products from '../data/products.js';
+import SwiperCore, { Navigation, Pagination, EffectCoverflow } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+SwiperCore.use([Navigation, Pagination, EffectCoverflow]);
 
 const index = () => {
   return (
@@ -19,84 +23,118 @@ const index = () => {
       />
 
       {
-        // <nav className="navbar navbar-expand-lg navbar-light">
+        // <nav className="navbar navbar-expand-lg navbar-dark sticky-top">
         //   <div className="container">
         //     <a href="/" className="navbar-brand">
-        //       <img style={{ width: "200px" }} src="/img/logos/logo-light.png" alt="Launch Tech LLC Logo" />
+        //       <img style={{ width: "50px" }} src="/img/logos/logo-cut-light.png" alt="Launch Tech LLC Logo" />
         //     </a>
+        //     <ul className="navbar-nav ml-auto">
+        //       <li className="nav-item">
+        //         <a className="nav-link" href="#">Home</a>
+        //       </li>
+        //       <li className="nav-item">
+        //         <a className="nav-link" href="#">About</a>
+        //       </li>
+        //       <li className="nav-item">
+        //         <a className="nav-link" href="#">Products</a>
+        //       </li>
+        //     </ul>
         //   </div>
         // </nav>
       }
 
       <header>
-        <div className="container text-center">
-          <h1 className="header-primary">Launch Tech LLC</h1>
-          <p>Scaled applications to impact the world.</p>
+        <div className="container">
+          <div className="split-grid">
+            <div>
+              <h1 className="header-primary">Build. Deploy. Scale.</h1>
+              <p>Scaled applications to impact the world.</p>
+            </div>
+            <img src="/img/illustrations/header.jpg" />
+          </div>
         </div>
       </header>
 
-      <div className="container py-4">
-        <div className="stats-grid">
-          <div className="stat">
-            <span className="title">Interactions</span>
-            <span className="number">30,000+</span>
-          </div>
-          <div className="stat">
-            <span className="title">Users</span>
-            <span className="number">2,000+</span>
-          </div>
-          <div className="stat">
-            <span className="title">Projects</span>
-            <span className="number">{projects.length}</span>
+      <div className="logo-banner">
+        <div className="container">
+          <div className="label">Happy users from</div>
+          <div className="logo-grid">
+            <span>TKS</span>
+            <span>LaunchX</span>
+            <span>BEAM</span>
+            <span>Beeznests</span>
+            <span>Microsoft</span>
           </div>
         </div>
       </div>
 
-      <section>
-        <div className="container">
-          <h1 className="header-secondary mb-4">Projects</h1>
-          <div className="projects-grid">
-            {projects.map((project, i) => (
-              <a href={project.link} target="_blank">
-                <div className={`project ${project.featured ? "featured" : ""}`}>
-                  <div>
-                    <h3 className="header-fourth" style={{
-                      display: "flex",
-                      alignItems: "center"
-                    }}>
-                      {project.title}
-                      <div className="ml-auto tags">
-                        {project.featured ?
-                          <span className="tag">FEATURED</span> : ""
-                        }
-                        {project.acquired ?
-                          <span className="tag acquired">ACQUIRED</span> : ""
-                        }
-                        {project.deprecated ?
-                          <span className="tag deprecated">DEPRECATED</span> : ""
-                        }
-                        {project.tag ?
-                          <span className="tag">{project.tag}</span> : ""
-                        }
+      <section className="products">
+        <div className="">
+          <h1 className="header-secondary mb-5 text-center">Products</h1>
+
+          <Swiper
+            effect='coverflow'
+            grabCursor={true}
+            centeredSlides={true}
+            slidesPerView={1.75}
+            coverflowEffect={{
+              rotate: 50,
+              stretch: 0,
+              depth: 100,
+              modifier: 1,
+              slideShadows: true,
+            }}
+            pagination={{ clickable: true }}
+          >
+            {products.map((product, i) => (
+              <SwiperSlide style={{ backgroundImage: "url(/img/projects/anojs.png)", backgroundSize: "cover", backgroundPosition: "center" }}>
+                <div className="product-slide">
+                  <div className="split-grid">
+                    <div>
+                      <h3 className="header-tertiary">{product.title}</h3>
+                      <p>{product.description}</p>
+                      <div className="tags">
+                        {product.tags.map((tag, i) => (
+                          <span className="tag">{tag}</span>
+                        ))}
                       </div>
-                    </h3>
-                    <p>{project.description}</p>
-                  </div>
-                  <div className="tags">
-                    {project.tags.map((tag, i) => (
-                      <span className="tag">{tag}</span>
-                    ))}
+                      <a className="button-light mt-3" href={product.link} target="_blank">Learn more</a>
+                    </div>
+                    <div>
+                      <table>
+                        <tr>
+                          <td style={{ borderRight: "2px solid white", borderBottom: "2px solid white" }}>
+                            <span className="number">{product.users}</span>
+                            users
+                          </td>
+                          <td style={{ borderLeft: "2px solid white", borderBottom: "2px solid white" }}>
+                            <span className="number">{product.latestRelease}</span>
+                            latest release
+                          </td>
+                        </tr>
+                        <tr>
+                        <td style={{ borderRight: "2px solid white", borderTop: "2px solid white" }}>
+                          <span className="number">{product.users}</span>
+                          users
+                        </td>
+                        <td style={{ borderLeft: "2px solid white", borderTop: "2px solid white" }}>
+                          <span className="number">{product.latestRelease}</span>
+                          latest release
+                        </td>
+                        </tr>
+                      </table>
+                    </div>
                   </div>
                 </div>
-              </a>
+              </SwiperSlide>
             ))}
-          </div>
+          </Swiper>
         </div>
       </section>
 
       <section>
         <div className="container">
-          <h1 className="header-secondary mb-4">About</h1>
+          <h1 className="header-secondary mb-4">From the Founder</h1>
           <div className="about-grid">
             <img src="/img/people/calix.jpeg" alt="Calix Huang - Launch Tech LLC" />
             <div className="about">
@@ -108,13 +146,14 @@ const index = () => {
                 <div className="tag">Entrepreneur</div>
               </div>
               <p>
-                Hey there! My name is Calix, and I'm a self-taught startup engineer, with a focus on full-stack web development. I believe in learning by doing, so I try to model my projects around useful ideas that can be deployed to users around the globe. My skills in full-stack development allow me to take a project from an idea to a product!
+                Hey there! My name is Calix, and I'm a self-taught startup engineer, with a focus on full-stack web development. I believe in learning by doing, so I try to model my products around useful ideas that can be deployed to users around the globe. My skills in full-stack development allow me to take a project from an idea to a product!
               </p>
               <p>
-                Launch Tech LLC is my personal software holding company, and this is where I build, host, deploy, and scale all of my personal projects :)
+                Launch Tech LLC is my personal software holding company, and this is where I build, host, deploy, and scale all of my personal products :)
               </p>
               <div className="social">
                 <a href="https://www.instagram.com/calixo888/" target="_blank"><FontAwesomeIcon icon={faInstagram}/></a>
+                <a href="https://www.twitter.com/calixo888/" target="_blank"><FontAwesomeIcon icon={faTwitter}/></a>
                 <a href="https://www.linkedin.com/in/calix-huang/" target="_blank"><FontAwesomeIcon icon={faLinkedin}/></a>
                 <a href="https://github.com/calixo888" target="_blank"><FontAwesomeIcon icon={faGithub}/></a>
                 <a href="mailto:me@calix.dev" target="_blank"><FontAwesomeIcon icon={faEnvelope}/></a>
@@ -124,9 +163,25 @@ const index = () => {
         </div>
       </section>
 
-      <div className="copyright">
-        <small>&copy; 2020 Launch Tech LLC. All rights reserved.</small>
-      </div>
+      <footer>
+        <div className="container">
+          <p>&copy; 2020 Launch Tech LLC. All rights reserved.</p>
+          <div className="social-media">
+            <a href="#" target="_blank">
+              <FontAwesomeIcon icon={faInstagram} />
+            </a>
+            <a href="#" target="_blank">
+              <FontAwesomeIcon icon={faTwitter} />
+            </a>
+            <a href="https://www.linkedin.com/company/launchtechllc" target="_blank">
+              <FontAwesomeIcon icon={faLinkedin} />
+            </a>
+            <a href="mailto:hello@launchtechllc.com" target="_blank">
+              <FontAwesomeIcon icon={faEnvelope} />
+            </a>
+          </div>
+        </div>
+      </footer>
     </div>
   )
 }

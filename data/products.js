@@ -12,7 +12,11 @@ export default [
     deprecated: false,
     users: 300,
     latestRelease: "v2.0",
-    started: "October 2020"
+    started: "October 2020",
+    colors: {
+      primary: "#50c878",
+      secondary: "#45ad68"
+    }
   },{
     title: "Ano.js",
     description: "An open-source web animation library allowing custom, interactive animations to be added to a website with just 2 lines of code.",
@@ -26,7 +30,11 @@ export default [
     deprecated: false,
     users: 300,
     latestRelease: "v2.0",
-    started: "October 2020"
+    started: "October 2020",
+    colors: {
+      primary: "#3c3c3c",
+      secondary: "#141414"
+    }
   },{
     title: "Bot Gang",
     description: "A collection of the baddest, gnarliest, and most edgy bots you'll ever hear about, and it's all listed for anyone to use.",
@@ -40,7 +48,11 @@ export default [
     deprecated: false,
     users: 300,
     latestRelease: "v2.0",
-    started: "October 2020"
+    started: "October 2020",
+    colors: {
+      primary: "#a9a9a9",
+      secondary: "#8e8989"
+    }
   },{
     title: "NPO Core",
     description: "NPO Core is a curated list of nonprofit organizations, allowing anyone to find the perfect nonprofit to get involved with and get in contact!",
@@ -54,7 +66,11 @@ export default [
     deprecated: false,
     users: 300,
     latestRelease: "v2.0",
-    started: "October 2020"
+    started: "October 2020",
+    colors: {
+      primary: "#12c3c3",
+      secondary: "#109c9c"
+    }
   },{
     title: "w3hacks",
     description: "A platform where anyone can learn to code through real-world practices. Acquired by NovaCrypt.",
@@ -68,7 +84,11 @@ export default [
     deprecated: false,
     users: 300,
     latestRelease: "v2.0",
-    started: "October 2020"
+    started: "October 2020",
+    colors: {
+      primary: "#212529",
+      secondary: "#1c1f22"
+    }
   },{
     title: "GlobalStatus",
     description: "Web-based status setter, that can help efficiently set the status of many of the platforms you use",
@@ -82,7 +102,11 @@ export default [
     deprecated: false,
     users: 300,
     latestRelease: "v2.0",
-    started: "October 2020"
+    started: "October 2020",
+    colors: {
+      primary: "#05445E",
+      secondary: "#05445E"
+    }
   },{
     title: "CoScript",
     description: "CLI script manager that can store, manage, and execute sequences of commands quickly and efficiently.",
@@ -96,6 +120,10 @@ export default [
     deprecated: false,
     users: 300,
     latestRelease: "v2.0",
-    started: "October 2020"
+    started: "October 2020",
+    colors: {
+      primary: "#05445E",
+      secondary: "#05445E"
+    }
   }
 ]

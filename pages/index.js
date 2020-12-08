@@ -124,7 +124,6 @@ const index = () => {
             effect='coverflow'
             grabCursor={true}
             centeredSlides={true}
-            slidesPerView={1.75}
             coverflowEffect={{
               rotate: 50,
               stretch: 0,
@@ -133,9 +132,17 @@ const index = () => {
               slideShadows: true,
             }}
             pagination={{ clickable: true }}
+            breakpoints={{
+              1200: {
+                slidesPerView: 1.75
+              },
+              900: {
+                slidesPerView: 1.5
+              }
+            }}
           >
             {products.map((product, i) => (
-              <SwiperSlide style={{ backgroundImage: "url(/img/projects/anojs.png)", backgroundSize: "cover", backgroundPosition: "center" }}>
+              <SwiperSlide style={{ backgroundImage: `linear-gradient(to right bottom, ${product.colors.primary}, ${product.colors.secondary})`, backgroundSize: "cover", backgroundPosition: "center" }}>
                 <div className="product-slide">
                   <div className="split-grid">
                     <div>

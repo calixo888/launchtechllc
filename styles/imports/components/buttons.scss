@@ -1,28 +1,19 @@
 .button-dark {
   display: inline-block;
   background-color: $color-primary;
-  padding: 10px 30px;
-  border-radius: 30px;
+  padding: 15px 30px;
+  border-radius: 40px;
   transition: all .2s;
+  font-size: 17.5px;
+  text-transform: uppercase;
+  color: white !important;
+  box-shadow: 0 2px 5px rgba(0,0,0,.1);
 
   &:hover {
-    background-color: $color-primary;
+    background-color: $color-primary-dark;
     text-decoration: none;
-  }
-
-  .body {
-    display: flex;
-    align-items: center;
-    font-size: 17.5px;
-    color: white !important;
-
-    & svg {
-      margin-left: 10px;
-
-      & path {
-        fill: white;
-      }
-    }
+    transform: translateY(-2px);
+    box-shadow: $box-shadow;
   }
 }
 
@@ -30,26 +21,15 @@
   display: inline-block;
   background-color: white;
   padding: 10px 30px;
-  border-radius: 30px;
+  border-radius: 40px;
   font-size: 17.5px;
   transition: all .2s;
+  text-transform: uppercase;
+  color: #333 !important;
+  box-shadow: 0 2px 5px rgba(0,0,0,.1);
 
   &:hover {
     background-color: #eee;
     text-decoration: none;
-  }
-
-  .body {
-    display: flex;
-    align-items: center;
-    color: #333 !important;
-
-    & svg {
-      margin-left: 10px;
-
-      & path {
-        fill: #333;
-      }
-    }
   }
 }

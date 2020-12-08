@@ -54,11 +54,7 @@ const index = () => {
             <div>
               <h1 className="header-primary">Build. Deploy. Scale.</h1>
               <p>We launch consumer-based products to impact the world.</p>
-              <a className="button-dark" href="#about">
-                <div className="body">
-                  Learn more <FontAwesomeIcon style={{ width: "17.5px" }} icon={faArrowDown} />
-                </div>
-              </a>
+              <a className="button-dark" href="#about">Learn more</a>
             </div>
             <img src="/img/illustrations/header.jpg" />
           </div>
@@ -83,12 +79,12 @@ const index = () => {
       <div className="container py-4">
         <div className="stats-grid">
           <div className="stat">
-            <span className="title">Interactions</span>
-            <span className="number">30,000+</span>
+            <span className="title">Commits</span>
+            <span className="number">3,000+</span>
           </div>
           <div className="stat">
             <span className="title">Users</span>
-            <span className="number">2,000+</span>
+            <span className="number">1,500+</span>
           </div>
           <div className="stat">
             <span className="title">Products</span>
@@ -106,11 +102,7 @@ const index = () => {
               <p>Our mission is to build, deploy, and scale the world's most impactful consumer-based and B2C SaaS products.</p>
               <p>We ideate, incubate, and accelerate startup ideas, garner a sense of growth, and constantly ship things to market.</p>
 
-              <a className="button-dark" href="#products">
-                <div className="body">
-                  Our products <FontAwesomeIcon style={{ width: "17.5px" }} icon={faArrowDown} />
-                </div>
-              </a>
+              <a className="button-dark" href="#products">Our products</a>
             </div>
           </div>
         </div>
@@ -168,11 +160,7 @@ const index = () => {
                           <span className="tag">{tag}</span>
                         ))}
                       </div>
-                      <a className="button-light mt-3" href={product.link} target="_blank">
-                        <div className="body">
-                          Check it out <FontAwesomeIcon style={{ width: "17.5px" }} icon={faExternalLinkAlt} />
-                        </div>
-                      </a>
+                      <a className="button-light mt-3" href={product.link} target="_blank">Check it out</a>
                     </div>
                     <div>
                       <table>

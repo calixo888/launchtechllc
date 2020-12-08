@@ -1,5 +1,15 @@
 header {
   background-color: $color-tertiary;
+
+  .header-grid {
+    grid-template-columns: 450px 1fr;
+  }
+}
+
+@media (max-width: 1000px) {
+  .header-grid {
+    grid-template-columns: repeat(auto-fill, 100%) !important;
+  }
 }
 
 .logo-banner {

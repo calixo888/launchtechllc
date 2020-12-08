@@ -1,15 +1,16 @@
 $color-primary: #189AB4;
 $color-secondary: #05445E;
-$color-tertiary: #dfe7f4;
+$color-tertiary: #B3E0FF;
 $box-shadow: 0 4px 8px rgba(0,0,0,.15);
 
 * {
   font-family: Open Sans;
   color: #333;
+  scroll-behavior: smooth;
 }
 
 body {
-  background-color: #f8f8f8;
+  // background-color: #f8f8f8;
 }
 
 header {
@@ -21,7 +22,18 @@ header {
 }
 
 nav {
-  background-color: $color-primary;
+  position: absolute;
+  background-color: $color-tertiary;
+}
+
+.navbar-nav {
+  flex-direction: row;
+}
+
+@media (max-width: 600px) {
+  .nav-item {
+    margin-left: 15px;
+  }
 }
 
 section {

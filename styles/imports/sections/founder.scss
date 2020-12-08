@@ -1,0 +1,44 @@
+.founder-grid {
+  max-width: 900px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 15px;
+  margin: 0 auto;
+
+  .founder {
+    display: grid;
+    grid-template-columns: 60px 175px;
+    grid-gap: 15px;
+    margin-left: auto;
+
+    & img {
+      border-radius: 50%;
+      border: 3px solid $color-primary;
+      width: 100%;
+    }
+
+    .title {
+      color: #777;
+    }
+
+    .social {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, 20px);
+      grid-gap: 10px;
+
+      & svg {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .founder-grid {
+    grid-template-columns: repeat(auto-fill, 100%) !important;
+
+    & img {
+      width: 50%;
+    }
+  }
+}

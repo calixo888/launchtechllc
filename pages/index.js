@@ -2,7 +2,7 @@ import Head from "next/head";
 import { NextSeo } from 'next-seo';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInstagram, faLinkedin, faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faArrowDown, faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 import products from '../data/products.js';
 import SwiperCore, { Navigation, Pagination, EffectCoverflow } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -22,33 +22,43 @@ const index = () => {
         description="Launch Tech LLC is a SaaS product holding company for scaled applications aiming to impact the world. We create, incubate, and accelerate the growth of different software applications and deploy them for the world to use!"
       />
 
-      {
-        // <nav className="navbar navbar-expand-lg navbar-dark sticky-top">
-        //   <div className="container">
-        //     <a href="/" className="navbar-brand">
-        //       <img style={{ width: "50px" }} src="/img/logos/logo-cut-light.png" alt="Launch Tech LLC Logo" />
-        //     </a>
-        //     <ul className="navbar-nav ml-auto">
-        //       <li className="nav-item">
-        //         <a className="nav-link" href="#">Home</a>
-        //       </li>
-        //       <li className="nav-item">
-        //         <a className="nav-link" href="#">About</a>
-        //       </li>
-        //       <li className="nav-item">
-        //         <a className="nav-link" href="#">Products</a>
-        //       </li>
-        //     </ul>
-        //   </div>
-        // </nav>
-      }
+      <nav className="navbar navbar-expand-sm navbar-light">
+        <div className="container">
+          <a href="/" className="navbar-brand">
+            <img style={{ width: "50px" }} src="/img/logos/logo-cut.png" alt="Launch Tech LLC Logo" />
+          </a>
+
+          <ul className="navbar-nav ml-auto">
+            <li className="nav-item">
+              <a className="nav-link" href="#" target="_blank">
+                <FontAwesomeIcon style={{ width: "18px" }} icon={faInstagram} />
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#" target="_blank">
+                <FontAwesomeIcon style={{ width: "18px" }} icon={faTwitter} />
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#" target="_blank">
+                <FontAwesomeIcon style={{ width: "18px" }} icon={faLinkedin} />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
       <header>
         <div className="container">
-          <div className="split-grid">
+          <div className="header-grid split-grid" style={{ position: "relative" }}>
             <div>
               <h1 className="header-primary">Build. Deploy. Scale.</h1>
-              <p>Scaled applications to impact the world.</p>
+              <p>We launch consumer-based products to impact the world.</p>
+              <a className="button-dark" href="#about">
+                <div className="body">
+                  Learn more <FontAwesomeIcon style={{ width: "17.5px" }} icon={faArrowDown} />
+                </div>
+              </a>
             </div>
             <img src="/img/illustrations/header.jpg" />
           </div>
@@ -70,9 +80,45 @@ const index = () => {
         </div>
       </div>
 
-      <section className="products">
+      <div className="container py-4">
+        <div className="stats-grid">
+          <div className="stat">
+            <span className="title">Interactions</span>
+            <span className="number">30,000+</span>
+          </div>
+          <div className="stat">
+            <span className="title">Users</span>
+            <span className="number">2,000+</span>
+          </div>
+          <div className="stat">
+            <span className="title">Products</span>
+            <span className="number">{products.length}</span>
+          </div>
+        </div>
+      </div>
+
+      <section id="about">
+        <div className="container">
+          <div className="about-grid split-grid">
+            <img src="/img/illustrations/about.jpg" />
+            <div>
+              <h1 className="header-secondary">We launch impactful products.</h1>
+              <p>Our mission is to build, deploy, and scale the world's most impactful consumer-based and B2C SaaS products.</p>
+              <p>We ideate, incubate, and accelerate startup ideas, garner a sense of growth, and constantly ship things to market.</p>
+
+              <a className="button-dark" href="#products">
+                <div className="body">
+                  Our products <FontAwesomeIcon style={{ width: "17.5px" }} icon={faArrowDown} />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="products" id="products">
         <div className="">
-          <h1 className="header-secondary mb-5 text-center">Products</h1>
+          <h2 className="header-secondary mb-5 text-center">Products</h2>
 
           <Swiper
             effect='coverflow'
@@ -100,7 +146,11 @@ const index = () => {
                           <span className="tag">{tag}</span>
                         ))}
                       </div>
-                      <a className="button-light mt-3" href={product.link} target="_blank">Learn more</a>
+                      <a className="button-light mt-3" href={product.link} target="_blank">
+                        <div className="body">
+                          Check it out <FontAwesomeIcon style={{ width: "17.5px" }} icon={faExternalLinkAlt} />
+                        </div>
+                      </a>
                     </div>
                     <div>
                       <table>
@@ -136,29 +186,33 @@ const index = () => {
 
       <section>
         <div className="container">
-          <h1 className="header-secondary mb-4">From the Founder</h1>
-          <div className="about-grid">
-            <img src="/img/people/calix.jpeg" alt="Calix Huang - Launch Tech LLC" />
-            <div className="about">
-              <h2 className="header-tertiary">Calix Huang</h2>
-              <div className="tags my-2">
-                <div className="tag">@calixo888</div>
-                <div className="tag">Full-stack developer</div>
-                <div className="tag">Startup engineer</div>
-                <div className="tag">Entrepreneur</div>
-              </div>
-              <p>
-                Hey there! My name is Calix, and I'm a self-taught startup engineer, with a focus on full-stack web development. I believe in learning by doing, so I try to model my products around useful ideas that can be deployed to users around the globe. My skills in full-stack development allow me to take a project from an idea to a product!
-              </p>
-              <p>
-                Launch Tech LLC is my personal software holding company, and this is where I build, host, deploy, and scale all of my personal products :)
-              </p>
-              <div className="social">
-                <a href="https://www.instagram.com/calixo888/" target="_blank"><FontAwesomeIcon icon={faInstagram}/></a>
-                <a href="https://www.twitter.com/calixo888/" target="_blank"><FontAwesomeIcon icon={faTwitter}/></a>
-                <a href="https://www.linkedin.com/in/calix-huang/" target="_blank"><FontAwesomeIcon icon={faLinkedin}/></a>
-                <a href="https://github.com/calixo888" target="_blank"><FontAwesomeIcon icon={faGithub}/></a>
-                <a href="mailto:me@calix.dev" target="_blank"><FontAwesomeIcon icon={faEnvelope}/></a>
+          <h2 className="header-secondary mb-5 text-center">The Story of Launch Tech</h2>
+          <div className="founder-grid">
+            <div>
+              <p>I started Launch Tech LLC for reasons completely different than what it is today.</p>
+              <p>Back in January-April 2020, I was building projects furiously. <strong>Anything I learned or anything I wanted to build, I built.</strong></p>
+              <p>But, what stayed true throughout the many projects I built was that they were all <strong>real-world, consumer-based applications,</strong> and that's where my passion lies.</p>
+              <p>My mom helped me setup a company to give my projects some legal protection. But, I decided I wanted Launch Tech to be more than just a holding company.</p>
+              <p>After cycling through many ideas, as well as a failed attempt at one concept, here we are!</p>
+            </div>
+            <div>
+              <p>Launch Tech is a startup ideater, incubator, and accelerator, and the platform I always dreamed of having.</p>
+              <p>No formal structures, boring business operations, or any of that. Purely ideas, code, and launches, day in day out.</p>
+              <p>I hope that Launch Tech will continue to produce and launch more products into the future, and that users may find it helpful in whatever means available.</p>
+
+              <div className="founder mt-3">
+                <img src="/img/people/calix.jpg" alt="Calix Huang - Launch Tech LLC" />
+                <div>
+                  <h5 className="header-fourth mb-0">Calix Huang</h5>
+                  <span className="title">Founder</span>
+                  <div className="social mt-1">
+                    <a href="https://www.instagram.com/calixo888/" target="_blank"><FontAwesomeIcon icon={faInstagram}/></a>
+                    <a href="https://www.twitter.com/calixo888/" target="_blank"><FontAwesomeIcon icon={faTwitter}/></a>
+                    <a href="https://www.linkedin.com/in/calix-huang/" target="_blank"><FontAwesomeIcon icon={faLinkedin}/></a>
+                    <a href="https://github.com/calixo888" target="_blank"><FontAwesomeIcon icon={faGithub}/></a>
+                    <a href="mailto:me@calix.dev" target="_blank"><FontAwesomeIcon icon={faEnvelope}/></a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

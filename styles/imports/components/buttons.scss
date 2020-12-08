@@ -1,14 +1,55 @@
+.button-dark {
+  display: inline-block;
+  background-color: $color-primary;
+  padding: 10px 30px;
+  border-radius: 30px;
+  transition: all .2s;
+
+  &:hover {
+    background-color: $color-primary;
+    text-decoration: none;
+  }
+
+  .body {
+    display: flex;
+    align-items: center;
+    font-size: 17.5px;
+    color: white !important;
+
+    & svg {
+      margin-left: 10px;
+
+      & path {
+        fill: white;
+      }
+    }
+  }
+}
+
 .button-light {
   display: inline-block;
   background-color: white;
-  padding: 10px 20px;
+  padding: 10px 30px;
   border-radius: 30px;
   font-size: 17.5px;
-  color: #333 !important;
   transition: all .2s;
 
   &:hover {
     background-color: #eee;
     text-decoration: none;
+  }
+
+  .body {
+    display: flex;
+    align-items: center;
+    color: #333 !important;
+
+    & svg {
+      margin-left: 10px;
+
+      & path {
+        fill: #333;
+      }
+    }
   }
 }

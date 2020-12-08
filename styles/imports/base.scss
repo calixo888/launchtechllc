@@ -53,36 +53,13 @@ svg {
   flex-wrap: wrap;
 
   .tag {
-    border: 2px solid $color-primary;
+    border: 2px solid white;
     border-radius: 50px;
     padding: 1.5px 10px;
-    color: $color-primary;
+    color: white;
     margin-right: 2.5px;
     margin-bottom: 2.5px;
     font-size: 15px;
     font-weight: normal;
-  }
-
-  .acquired {
-    border-color: rgb(138, 172, 23);
-    color: rgb(138, 172, 23);
-  }
-
-  .deprecated {
-    border-color: rgb(209, 54, 54);
-    color: rgb(209, 54, 54);
-  }
-}
-
-.copyright {
-  display: block;
-  width: 100%;
-  background-color: $color-primary;
-  text-align: center;
-  padding: 5px 0;
-  margin-top: 50px;
-
-  & small {
-    color: white;
   }
 }

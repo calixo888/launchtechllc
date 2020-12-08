@@ -4,10 +4,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInstagram, faLinkedin, faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faArrowDown, faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 import products from '../data/products.js';
-import SwiperCore, { Navigation, Pagination, EffectCoverflow } from 'swiper';
+import SwiperCore, { Navigation, Pagination, EffectCoverflow, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-SwiperCore.use([Navigation, Pagination, EffectCoverflow]);
+SwiperCore.use([Navigation, Pagination, Autoplay, EffectCoverflow]);
 
 const index = () => {
   return (
@@ -18,7 +18,7 @@ const index = () => {
       </Head>
 
       <NextSeo
-        title="Launch Tech LLC - Scaled applications to impact the world."
+        title="Launch Tech LLC - Build. Deploy. Scale."
         description="Launch Tech LLC is a B2C SaaS product ideater, incubator, and accelerator, launching scaled, consumer-based applications aiming to impact the world. We are home to Hours.zone, Ano.js, NPO Core, and much more."
       />
 
@@ -121,7 +121,7 @@ const index = () => {
           <h2 className="header-secondary mb-5 text-center">Products</h2>
 
           <Swiper
-            effect='coverflow'
+            effect="coverflow"
             grabCursor={true}
             centeredSlides={true}
             coverflowEffect={{
@@ -131,13 +131,18 @@ const index = () => {
               modifier: 1,
               slideShadows: true,
             }}
+            navigation
+            autoplay
             pagination={{ clickable: true }}
             breakpoints={{
               1200: {
                 slidesPerView: 1.75
               },
-              900: {
+              700: {
                 slidesPerView: 1.5
+              },
+              300: {
+                slidesPerView: 1.25
               }
             }}
           >
@@ -146,7 +151,17 @@ const index = () => {
                 <div className="product-slide">
                   <div className="split-grid">
                     <div>
-                      <h3 className="header-tertiary">{product.title}</h3>
+                      <h3 className="header-tertiary" style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+                        {product.title}
+                        <div className="tags">
+                          {product.featured ?
+                            <span className="tag">FEATURED</span> : ""
+                          }
+                          {product.acquired ?
+                            <span className="tag acquired">ACQUIRED</span> : ""
+                          }
+                        </div>
+                      </h3>
                       <p>{product.description}</p>
                       <div className="tags">
                         {product.tags.map((tag, i) => (
@@ -173,12 +188,12 @@ const index = () => {
                         </tr>
                         <tr>
                         <td style={{ borderRight: "2px solid white", borderTop: "2px solid white" }}>
-                          <span className="number">{product.users}</span>
-                          users
+                          <span className="number">{product.commits}</span>
+                          commits
                         </td>
                         <td style={{ borderLeft: "2px solid white", borderTop: "2px solid white" }}>
-                          <span className="number">{product.latestRelease}</span>
-                          latest release
+                          <span style={{ fontSize: "32.5px" }} className="number">{product.started}</span>
+                          started
                         </td>
                         </tr>
                       </table>

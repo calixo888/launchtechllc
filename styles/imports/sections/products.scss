@@ -2,14 +2,32 @@
   border-radius: 8px;
 }
 
+.swiper-container {
+  padding-bottom: 45px !important;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  background-color: white;
+  padding: 15px 22.5px;
+  border-radius: 50%;
+  box-shadow: 0 5px 15px rgba(0,0,0,.2);
+
+  &::after {
+    font-size: 22.5px !important;
+  }
+}
+
+.swiper-button-prev:after, .swiper-button-next:after {
+  font-size: 22.5px;
+}
+
+.swiper-button-prev::after, .swiper-button-next::after {
+  font-size: 22.5px;
+}
+
 .product-slide {
   border-radius: 8px;
   padding: 50px;
-
-  .tags .tag {
-    border-color: white !important;
-    color: white;
-  }
 
   & * {
     color: white;
@@ -25,6 +43,7 @@
       width: 100%;
 
        & td {
+         padding: 15px;
          text-align: center;
 
          .number {
@@ -42,6 +61,7 @@
   .product-slide {
     & .split-grid {
       grid-template-columns: repeat(auto-fill, 100%);
+      grid-gap: 30px;
     }
   }
 }

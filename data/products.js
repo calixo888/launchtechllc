@@ -1,18 +1,17 @@
 export default [
   {
     title: "Hours",
-    description: "An on-demand productivity tool providing a modern solution to working remotely. We help people boost motivation, focus, and productivity when getting work done through accountability.",
+    description: "An on-demand productivity tool providing a modern solution to working remotely, helping people boost motivation and productivity.",
     link: "https://hours.zone",
     tags: [
       "Node.js", "Express", "Next.js", "React.js", "Socket.io", "MongoDB", "Sass"
     ],
     featured: true,
     acquired: false,
-    tag: "v2.0",
-    deprecated: false,
     users: 300,
     latestRelease: "v2.0",
-    started: "October 2020",
+    commits: 564,
+    started: "Oct 2020",
     colors: {
       primary: "#50c878",
       secondary: "#45ad68"
@@ -27,10 +26,10 @@ export default [
     featured: false,
     acquired: false,
     tag: "v2.5",
-    deprecated: false,
     users: 300,
-    latestRelease: "v2.0",
-    started: "October 2020",
+    latestRelease: "v2.5",
+    commits: 564,
+    started: "Nov 2019",
     colors: {
       primary: "#3c3c3c",
       secondary: "#141414"
@@ -45,10 +44,10 @@ export default [
     featured: false,
     acquired: false,
     tag: "v1.0",
-    deprecated: false,
     users: 300,
-    latestRelease: "v2.0",
-    started: "October 2020",
+    latestRelease: "v1.0",
+    commits: 86,
+    started: "Jun 2020",
     colors: {
       primary: "#a9a9a9",
       secondary: "#8e8989"
@@ -63,10 +62,10 @@ export default [
     featured: false,
     acquired: true,
     tag: undefined,
-    deprecated: false,
-    users: 300,
-    latestRelease: "v2.0",
-    started: "October 2020",
+    users: 500,
+    latestRelease: "v2.2",
+    commits: 1262,
+    started: "May 2020",
     colors: {
       primary: "#12c3c3",
       secondary: "#109c9c"
@@ -81,10 +80,10 @@ export default [
     featured: false,
     acquired: true,
     tag: undefined,
-    deprecated: false,
-    users: 300,
-    latestRelease: "v2.0",
-    started: "October 2020",
+    users: 200,
+    latestRelease: "v2.1",
+    commits: 457,
+    started: "Mar 2020",
     colors: {
       primary: "#212529",
       secondary: "#1c1f22"
@@ -99,10 +98,10 @@ export default [
     featured: false,
     acquired: false,
     tag: "IDLE",
-    deprecated: false,
-    users: 300,
-    latestRelease: "v2.0",
-    started: "October 2020",
+    users: 0,
+    latestRelease: "N/A",
+    commits: 9,
+    started: "Sep 2020",
     colors: {
       primary: "#05445E",
       secondary: "#05445E"
@@ -117,10 +116,10 @@ export default [
     featured: false,
     acquired: false,
     tag: "IDLE",
-    deprecated: false,
-    users: 300,
-    latestRelease: "v2.0",
-    started: "October 2020",
+    users: 0,
+    latestRelease: "N/A",
+    commits: 20,
+    started: "Aug 2020",
     colors: {
       primary: "#05445E",
       secondary: "#05445E"

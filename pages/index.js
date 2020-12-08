@@ -30,17 +30,17 @@ const index = () => {
 
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
-              <a className="nav-link" href="#" target="_blank">
+              <a className="nav-link" href="https://www.instagram.com/launchtechllc/" target="_blank">
                 <FontAwesomeIcon style={{ width: "18px" }} icon={faInstagram} />
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#" target="_blank">
+              <a className="nav-link" href="https://twitter.com/launchtechllc" target="_blank">
                 <FontAwesomeIcon style={{ width: "18px" }} icon={faTwitter} />
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#" target="_blank">
+              <a className="nav-link" href="https://www.linkedin.com/company/launchtechllc" target="_blank">
                 <FontAwesomeIcon style={{ width: "18px" }} icon={faLinkedin} />
               </a>
             </li>
@@ -48,7 +48,7 @@ const index = () => {
         </div>
       </nav>
 
-      <header>
+      <header style={{ paddingTop: "50px" }}>
         <div className="container">
           <div className="header-grid split-grid" style={{ position: "relative" }}>
             <div>
@@ -223,10 +223,10 @@ const index = () => {
         <div className="container">
           <p>&copy; 2020 Launch Tech LLC. All rights reserved.</p>
           <div className="social-media">
-            <a href="#" target="_blank">
+            <a href="https://www.instagram.com/launchtechllc/" target="_blank">
               <FontAwesomeIcon icon={faInstagram} />
             </a>
-            <a href="#" target="_blank">
+            <a href="https://twitter.com/launchtechllc" target="_blank">
               <FontAwesomeIcon icon={faTwitter} />
             </a>
             <a href="https://www.linkedin.com/company/launchtechllc" target="_blank">

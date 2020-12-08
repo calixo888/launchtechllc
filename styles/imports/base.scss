@@ -1,6 +1,5 @@
-$color-primary: #189AB4;
-$color-secondary: #05445E;
-$color-tertiary: #B3E0FF;
+$color-primary: #296E85;
+$color-secondary: #B3E0FF;
 $box-shadow: 0 4px 8px rgba(0,0,0,.15);
 
 * {
@@ -23,7 +22,7 @@ header {
 
 nav {
   position: absolute;
-  background-color: $color-tertiary;
+  background-color: $color-secondary;
 }
 
 .navbar-nav {

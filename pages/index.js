@@ -19,13 +19,13 @@ const index = () => {
 
       <NextSeo
         title="Launch Tech LLC - Scaled applications to impact the world."
-        description="Launch Tech LLC is a SaaS product holding company for scaled applications aiming to impact the world. We create, incubate, and accelerate the growth of different software applications and deploy them for the world to use!"
+        description="Launch Tech LLC is a B2C SaaS product ideater, incubator, and accelerator, launching scaled, consumer-based applications aiming to impact the world. We are home to Hours.zone, Ano.js, NPO Core, and much more."
       />
 
       <nav className="navbar navbar-expand-sm navbar-light">
         <div className="container">
           <a href="/" className="navbar-brand">
-            <img style={{ width: "50px" }} src="/img/logos/logo-cut.png" alt="Launch Tech LLC Logo" />
+            <img style={{ width: "50px" }} src="/img/logos/logo.png" alt="Launch Tech LLC Logo" />
           </a>
 
           <ul className="navbar-nav ml-auto">

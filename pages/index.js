@@ -180,7 +180,7 @@ const index = () => {
                           commits
                         </td>
                         <td style={{ borderLeft: "2px solid white", borderTop: "2px solid white" }}>
-                          <span style={{ fontSize: "32.5px" }} className="number">{product.started}</span>
+                          <span className="number date">{product.started}</span>
                           started
                         </td>
                         </tr>

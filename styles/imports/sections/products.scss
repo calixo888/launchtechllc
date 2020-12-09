@@ -52,6 +52,10 @@
            font-weight: bold;
            line-height: 55px;
          }
+
+         .date {
+           font-size: 32.5px;
+         }
        }
     }
   }
@@ -61,7 +65,11 @@
   .product-slide {
     & .split-grid {
       grid-template-columns: repeat(auto-fill, 100%);
-      grid-gap: 30px;
+      grid-gap: 0px;
+
+      table {
+        display: none;
+      }
     }
   }
 }

@@ -231,7 +231,7 @@ const index = () => {
 
       <footer>
         <div className="container">
-          <p>&copy; 2020 Launch Tech LLC. All rights reserved.</p>
+          <p>&copy; 2021 Launch Tech LLC. All rights reserved.</p>
           <div className="social-media">
             <a href="https://www.instagram.com/launchtechllc/" target="_blank">
               <FontAwesomeIcon icon={faInstagram} />

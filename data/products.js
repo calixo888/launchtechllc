@@ -10,7 +10,7 @@ export default [
     acquired: false,
     users: 200,
     latestRelease: "v2.5",
-    commits: 1037,
+    commits: 1050,
     started: "Oct 2020",
     colors: {
       primary: "#50c878",

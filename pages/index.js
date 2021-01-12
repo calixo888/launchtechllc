@@ -76,22 +76,24 @@ const index = () => {
         </div>
       </div>
 
-      <div className="container py-4">
-        <div className="stats-grid">
-          <div className="stat">
-            <span className="title">Commits</span>
-            <span className="number">3,000+</span>
-          </div>
-          <div className="stat">
-            <span className="title">Users</span>
-            <span className="number">1,500+</span>
-          </div>
-          <div className="stat">
-            <span className="title">Products</span>
-            <span className="number">{products.length}</span>
-          </div>
-        </div>
-      </div>
+      {
+        // <div className="container py-4">
+        //   <div className="stats-grid">
+        //     <div className="stat">
+        //       <span className="title">Commits</span>
+        //       <span className="number">3,000+</span>
+        //     </div>
+        //     <div className="stat">
+        //       <span className="title">Users</span>
+        //       <span className="number">1,500+</span>
+        //     </div>
+        //     <div className="stat">
+        //       <span className="title">Products</span>
+        //       <span className="number">{products.length}</span>
+        //     </div>
+        //   </div>
+        // </div>
+      }
 
       <section id="about">
         <div className="container">

@@ -1,16 +1,16 @@
 export default [
   {
     title: "Hours",
-    description: "An on-demand productivity tool providing a modern solution to working remotely, helping people boost motivation and productivity.",
-    link: "https://hours.zone",
+    description: "Hours lets you create virtual study groups and work with friends remotely. Easily create a study session, invite your friends, and get to work!",
+    link: "https://joinhours.com",
     tags: [
       "Node.js", "Express", "Next.js", "React.js", "Socket.io", "MongoDB", "Sass"
     ],
     featured: true,
     acquired: false,
-    users: 150,
-    latestRelease: "v2.0",
-    commits: 564,
+    users: 200,
+    latestRelease: "v2.5",
+    commits: 1037,
     started: "Oct 2020",
     colors: {
       primary: "#50c878",
@@ -26,9 +26,9 @@ export default [
     featured: false,
     acquired: false,
     tag: "v2.5",
-    users: 300,
-    latestRelease: "v2.5",
-    commits: 250,
+    users: 250,
+    latestRelease: "v2.6",
+    commits: 480,
     started: "Nov 2019",
     colors: {
       primary: "#3c3c3c",
@@ -54,7 +54,7 @@ export default [
     }
   },{
     title: "NPO Core",
-    description: "NPO Core is a curated list of nonprofit organizations, allowing anyone to find the perfect nonprofit to get involved with and get in contact!",
+    description: "NPO Core is a curated list of nonprofit organizations, allowing anyone to find the perfect nonprofit to get involved with and get in contact. Acquired by NovaCrypt.",
     link: "https://npocore.com/",
     tags: [
       "Node.js", "Express", "MongoDB", "React.js", "Sass"
@@ -87,42 +87,6 @@ export default [
     colors: {
       primary: "#212529",
       secondary: "#1c1f22"
-    }
-  },{
-    title: "GlobalStatus",
-    description: "Web-based status setter, that can help efficiently set the status of many of the platforms you use",
-    link: "https://github.com/calixo888/globalstatus",
-    tags: [
-      "Node.js", "Express", "MongoDB", "Slack API", "Discord API"
-    ],
-    featured: false,
-    acquired: false,
-    tag: "IDLE",
-    users: 0,
-    latestRelease: "N/A",
-    commits: 9,
-    started: "Sep 2020",
-    colors: {
-      primary: "#05445E",
-      secondary: "#05445E"
-    }
-  },{
-    title: "CoScript",
-    description: "CLI script manager that can store, manage, and execute sequences of commands quickly and efficiently.",
-    link: "https://github.com/calixo888/coscript",
-    tags: [
-      "Python", "Argparse"
-    ],
-    featured: false,
-    acquired: false,
-    tag: "IDLE",
-    users: 0,
-    latestRelease: "N/A",
-    commits: 20,
-    started: "Aug 2020",
-    colors: {
-      primary: "#05445E",
-      secondary: "#05445E"
     }
   }
 ]

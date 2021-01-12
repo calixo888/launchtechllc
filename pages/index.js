@@ -199,7 +199,7 @@ const index = () => {
           <h2 className="header-secondary mb-5 text-center">The Story of Launch Tech</h2>
           <div className="founder-grid">
             <div>
-              <p>I started Launch Tech LLC for reasons completely different than what it is today.</p>
+              <p>I started Launch Tech for reasons completely different than what it is today.</p>
               <p>Back in January-April 2020, I was building projects furiously. <strong>Anything I learned or anything I wanted to build, I built.</strong></p>
               <p>But, what stayed true throughout the many projects I built was that they were all <strong>real-world, consumer-based applications,</strong> and that's where my passion lies.</p>
               <p>My mom helped me setup a company to give my projects some legal protection. But, I decided I wanted Launch Tech to be more than just a holding company.</p>

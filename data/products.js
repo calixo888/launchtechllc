@@ -8,10 +8,22 @@ export default [
     ],
     featured: true,
     acquired: false,
-    users: 200,
-    latestRelease: "v2.5",
-    commits: 1050,
-    started: "Oct 2020",
+    tag1: {
+      value: 450,
+      label: "users"
+    },
+    tag2: {
+      value: "v2.8.4",
+      label: "latest release"
+    },
+    tag3: {
+      value: 1500,
+      label: "commits"
+    },
+    tag4: {
+      value: "Oct 2020",
+      label: "started"
+    },
     colors: {
       primary: "#50c878",
       secondary: "#45ad68"
@@ -25,32 +37,25 @@ export default [
     ],
     featured: false,
     acquired: false,
-    tag: "v2.5",
-    users: 250,
-    latestRelease: "v2.6",
-    commits: 480,
-    started: "Nov 2019",
+    tag1: {
+      value: "50k+",
+      label: "downloads"
+    },
+    tag2: {
+      value: "v2.6",
+      label: "latest release"
+    },
+    tag3: {
+      value: 18,
+      label: "contributors"
+    },
+    tag4: {
+      value: "Nov 2019",
+      label: "started"
+    },
     colors: {
       primary: "#3c3c3c",
       secondary: "#141414"
-    }
-  },{
-    title: "Bot Gang",
-    description: "A collection of the baddest, gnarliest, and most edgy bots you'll ever hear about, and it's all listed for anyone to use.",
-    link: "https://botgang.tech/",
-    tags: [
-      "Next.js", "React.js", "MongoDB", "Slack & Discord API", "Vercel Hosting"
-    ],
-    featured: false,
-    acquired: false,
-    tag: "v1.0",
-    users: 125,
-    latestRelease: "v1.0",
-    commits: 86,
-    started: "Jun 2020",
-    colors: {
-      primary: "#a9a9a9",
-      secondary: "#8e8989"
     }
   },{
     title: "NPO Core",
@@ -61,11 +66,22 @@ export default [
     ],
     featured: false,
     acquired: true,
-    tag: undefined,
-    users: 500,
-    latestRelease: "v2.2",
-    commits: 1262,
-    started: "May 2020",
+    tag1: {
+      value: 200,
+      label: "registered NPOs"
+    },
+    tag2: {
+      value: "250",
+      label: "opportunities"
+    },
+    tag3: {
+      value: "v2.2",
+      label: "latest release"
+    },
+    tag4: {
+      value: "May 2020",
+      label: "started"
+    },
     colors: {
       primary: "#12c3c3",
       secondary: "#109c9c"
@@ -75,18 +91,58 @@ export default [
     description: "A platform where anyone can learn to code through real-world practices. Acquired by NovaCrypt.",
     link: "http://w3hacks.com/",
     tags: [
-      "Python", "Django", "PostgreSQL"
+      "Python", "Django", "PostgreSQL", "Sass", "Handlebars"
     ],
     featured: false,
     acquired: true,
-    tag: undefined,
-    users: 200,
-    latestRelease: "v2.1",
-    commits: 457,
-    started: "Mar 2020",
+    tag1: {
+      value: 200,
+      label: "users"
+    },
+    tag2: {
+      value: "v2.1",
+      label: "latest release"
+    },
+    tag3: {
+      value: 500,
+      label: "commits"
+    },
+    tag4: {
+      value: "Mar 2020",
+      label: "started"
+    },
     colors: {
       primary: "#212529",
       secondary: "#1c1f22"
+    }
+  },{
+    title: "Bot Gang",
+    description: "A collection of the baddest, gnarliest, and most edgy bots you'll ever hear about, and it's all listed for anyone to use.",
+    link: "https://botgang.tech/",
+    tags: [
+      "Next.js", "React.js", "MongoDB", "Slack API", "Vercel"
+    ],
+    featured: false,
+    acquired: false,
+    tag1: {
+      value: 125,
+      label: "users"
+    },
+    tag2: {
+      value: 3,
+      label: "bots"
+    },
+    tag3: {
+      value: 1500,
+      label: "commits"
+    },
+    tag4: {
+      value: "Jun 2020",
+      label: "started"
+    },
+    colors: {
+      primary: "#a9a9a9",
+      secondary: "#8e8989"
     }
   }
 ]

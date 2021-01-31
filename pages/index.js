@@ -169,23 +169,23 @@ const index = () => {
                       <table>
                         <tr>
                           <td style={{ borderRight: "2px solid white", borderBottom: "2px solid white" }}>
-                            <span className="number">{product.users}</span>
-                            users
+                            <span className="number">{product.tag1.value}</span>
+                            {product.tag1.label}
                           </td>
                           <td style={{ borderLeft: "2px solid white", borderBottom: "2px solid white" }}>
-                            <span className="number">{product.latestRelease}</span>
-                            latest release
+                            <span className="number">{product.tag2.value}</span>
+                            {product.tag2.label}
                           </td>
                         </tr>
                         <tr>
-                        <td style={{ borderRight: "2px solid white", borderTop: "2px solid white" }}>
-                          <span className="number">{product.commits}</span>
-                          commits
-                        </td>
-                        <td style={{ borderLeft: "2px solid white", borderTop: "2px solid white" }}>
-                          <span className="number date">{product.started}</span>
-                          started
-                        </td>
+                          <td style={{ borderRight: "2px solid white", borderTop: "2px solid white" }}>
+                            <span className="number">{product.tag3.value}</span>
+                            {product.tag3.label}
+                          </td>
+                          <td style={{ borderLeft: "2px solid white", borderTop: "2px solid white" }}>
+                            <span className="number date">{product.tag4.value}</span>
+                            {product.tag4.label}
+                          </td>
                         </tr>
                       </table>
                     </div>

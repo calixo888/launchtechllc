@@ -64,14 +64,15 @@ const index = () => {
       <div className="logo-banner">
         <div className="container">
           {
-            // <div className="label">Happy users from</div>
+            // <div className="label">Users and awards from</div>
           }
           <div className="logo-grid">
-            <img className="tks" src="/img/users/tks.png" />
-            <img className="launchx" src="/img/users/launchx.png" />
-            <img className="leangap" src="/img/users/leangap.png" />
+
+            <img className="daily" src="https://assets.website-files.com/59c9811db5fc1c0001445dbd/5f74ce452bcdfe0d2cd6d4e0_logo-daily.svg" />
+            <img className="ripplink" src="https://uploads-ssl.webflow.com/5eb6362a83f8a53bcc336f88/5eb6362a83f8a51248336f91_Ripplink_Logo_Peach_RGB.svg" />
+            <img className="ucla" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/University_of_California%2C_Los_Angeles_logo.svg/1200px-University_of_California%2C_Los_Angeles_logo.svg.png" />
             <img className="cvt" src="/img/users/cvt.png" />
-            <img className="beeznests" src="/img/users/beeznests.png" />
+            <img className="tks" src="/img/users/tks.png" />
           </div>
         </div>
       </div>

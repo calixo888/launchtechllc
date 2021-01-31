@@ -32,28 +32,32 @@ header {
 
     & img {
       filter: grayscale(100%);
-      opacity: 0.8;
       margin: 15px;
     }
 
-    .tks {
+    .daily {
       width: 100px;
+      opacity: 0.6;
     }
 
-    .launchx {
-      width: 140px;
+    .ripplink {
+      width: 130px;
+      opacity: 0.9;
     }
 
-    .leangap {
-      width: 120px;
+    .ucla {
+      width: 100px;
+      opacity: 0.8;
     }
 
     .cvt {
       width: 180px;
+      opacity: 0.7;
     }
 
-    .beeznests {
-      width: 90px;
+    .tks {
+      width: 110px;
+      opacity: 0.65;
     }
   }
 }
@@ -61,6 +65,30 @@ header {
 @media (max-width: 1000px) {
   .logo-grid {
     grid-template-columns: repeat(auto-fill, minmax(175px, 1fr)) !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .logo-grid {
+    .daily {
+      width: 70px !important;
+    }
+
+    .ripplink {
+      width: 100px !important;
+    }
+
+    .ucla {
+      width: 70px !important;
+    }
+
+    .tks {
+      width: 80px !important;
+    }
+
+    .cvt {
+      width: 150px !important;
+    }
   }
 }
 

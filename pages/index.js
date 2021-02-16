@@ -26,7 +26,7 @@ const index = () => {
         <div className="container">
           <a href="/" className="navbar-brand">
             <img style={{ width: "50px" }} src="/img/logos/logo.png" alt="Launch Tech LLC Logo" />
-          </a>
+          </a> 
 
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">

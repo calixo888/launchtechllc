@@ -2,22 +2,22 @@ export default [
   {
     title: "Hours",
     description: "Hours lets you create virtual study groups and work with friends remotely. Easily create a study session, invite your friends, and get to work!",
-    link: "https://joinhours.com",
+    link: "https://hours.zone",
     tags: [
       "Node.js", "Express", "Next.js", "React.js", "Socket.io", "MongoDB", "Sass"
     ],
     featured: true,
     acquired: false,
     tag1: {
-      value: 450,
+      value: "3500+",
       label: "users"
     },
     tag2: {
-      value: "v2.8.4",
+      value: "v2.18.2",
       label: "latest release"
     },
     tag3: {
-      value: 1500,
+      value: "2500+",
       label: "commits"
     },
     tag4: {
@@ -67,11 +67,11 @@ export default [
     featured: false,
     acquired: true,
     tag1: {
-      value: 200,
+      value: "300+",
       label: "registered NPOs"
     },
     tag2: {
-      value: "250",
+      value: "500+",
       label: "opportunities"
     },
     tag3: {
@@ -96,7 +96,7 @@ export default [
     featured: false,
     acquired: true,
     tag1: {
-      value: 200,
+      value: "200+",
       label: "users"
     },
     tag2: {
@@ -104,7 +104,7 @@ export default [
       label: "latest release"
     },
     tag3: {
-      value: 500,
+      value: "500+",
       label: "commits"
     },
     tag4: {
@@ -114,35 +114,6 @@ export default [
     colors: {
       primary: "#212529",
       secondary: "#1c1f22"
-    }
-  },{
-    title: "Bot Gang",
-    description: "A collection of the baddest, gnarliest, and most edgy bots you'll ever hear about, and it's all listed for anyone to use.",
-    link: "https://botgang.tech/",
-    tags: [
-      "Next.js", "React.js", "MongoDB", "Slack API", "Vercel"
-    ],
-    featured: false,
-    acquired: false,
-    tag1: {
-      value: 125,
-      label: "users"
-    },
-    tag2: {
-      value: 3,
-      label: "bots"
-    },
-    tag3: {
-      value: 1500,
-      label: "commits"
-    },
-    tag4: {
-      value: "Jun 2020",
-      label: "started"
-    },
-    colors: {
-      primary: "#a9a9a9",
-      secondary: "#8e8989"
     }
   }
 ]

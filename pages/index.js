@@ -14,7 +14,6 @@ const index = () => {
     <div>
       <Head>
         <meta property="og:image" content="https://launchtechllc.com/ogimage.png" key="ogimage" />
-        <link rel="icon" href="/img/logos/favicon.png" />
       </Head>
 
       <NextSeo
@@ -25,7 +24,7 @@ const index = () => {
       <nav className="navbar navbar-expand-sm navbar-light">
         <div className="container">
           <a href="/" className="navbar-brand">
-            <img style={{ width: "50px" }} src="/img/logos/logo.png" alt="Launch Tech LLC Logo" />
+            <img style={{ width: "150px" }} src="/img/logos/logo-full.png" alt="Launch Tech LLC Logo" />
           </a> 
 
           <ul className="navbar-nav ml-auto">
@@ -63,16 +62,14 @@ const index = () => {
 
       <div className="logo-banner">
         <div className="container">
-          {
-            // <div className="label">Users and awards from</div>
-          }
+          <div className="label">Trusted by people from</div>
           <div className="logo-grid">
 
+            <img className="morningbrew" src="/img/banner/morningbrew.png" />
             <img className="daily" src="https://assets.website-files.com/59c9811db5fc1c0001445dbd/5f74ce452bcdfe0d2cd6d4e0_logo-daily.svg" />
-            <img className="ripplink" src="https://uploads-ssl.webflow.com/5eb6362a83f8a53bcc336f88/5eb6362a83f8a51248336f91_Ripplink_Logo_Peach_RGB.svg" />
-            <img className="ucla" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/University_of_California%2C_Los_Angeles_logo.svg/1200px-University_of_California%2C_Los_Angeles_logo.svg.png" />
-            <img className="cvt" src="/img/users/cvt.png" />
-            <img className="tks" src="/img/users/tks.png" />
+            <img className="stanford" src="/img/banner/stanford.png" />
+            <img className="erevna" src="/img/banner/erevna.png" />
+            <img className="tks" src="/img/banner/tks.png" />
           </div>
         </div>
       </div>

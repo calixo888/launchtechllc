@@ -1,7 +1,7 @@
 export default [
   {
     title: "Hours",
-    description: "Hours lets you create virtual study groups and work with friends remotely. Easily create a study session, invite your friends, and get to work!",
+    description: "The best virtual studying platform for students, helping them to create study sessions with their friends.",
     link: "https://hours.zone",
     tags: [
       "Node.js", "Express", "Next.js", "React.js", "Socket.io", "MongoDB", "Sass"
@@ -9,16 +9,16 @@ export default [
     featured: true,
     acquired: false,
     tag1: {
-      value: "3500+",
+      value: "5k+",
       label: "users"
     },
     tag2: {
-      value: "v2.18.2",
-      label: "latest release"
+      value: "14.5k+",
+      label: "sessions created"
     },
     tag3: {
-      value: "2500+",
-      label: "commits"
+      value: "v2.21",
+      label: "latest release"
     },
     tag4: {
       value: "Oct 2020",
@@ -59,7 +59,7 @@ export default [
     }
   },{
     title: "NPO Core",
-    description: "NPO Core is a curated list of nonprofit organizations, allowing anyone to find the perfect nonprofit to get involved with and get in contact. Acquired by NovaCrypt.",
+    description: "A curated platform of nonprofit organizations, allowing anyone to find the perfect nonprofit to get involved with and get in contact.",
     link: "https://npocore.com/",
     tags: [
       "Node.js", "Express", "MongoDB", "React.js", "Sass"
@@ -88,7 +88,7 @@ export default [
     }
   },{
     title: "w3hacks",
-    description: "A platform where anyone can learn to code through real-world practices. Acquired by NovaCrypt.",
+    description: "A platform where anyone can learn to code through real-world practices.",
     link: "http://w3hacks.com/",
     tags: [
       "Python", "Django", "PostgreSQL", "Sass", "Handlebars"

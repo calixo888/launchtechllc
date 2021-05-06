@@ -18,7 +18,7 @@ const index = () => {
 
       <NextSeo
         title="Launch Tech LLC - Build. Deploy. Scale."
-        description="Launch Tech LLC is a B2C SaaS product ideater, incubator, and accelerator, launching scaled, consumer-based applications aiming to impact the world. We are home to Hours.zone, Ano.js, NPO Core, and much more."
+        description="Launch Tech LLC ideates, incubates, and accelerates consumer-centric products through head-on development and organic growth. Our mission is to launch the world's most impactful ventures to a massive scale."
       />
 
       <nav className="navbar navbar-expand-sm navbar-light">

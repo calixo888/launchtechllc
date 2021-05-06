@@ -52,7 +52,7 @@ const index = () => {
           <div className="header-grid split-grid" style={{ position: "relative" }}>
             <div>
               <h1 className="header-primary">Build. Deploy. Scale.</h1>
-              <p>We launch consumer-based products to impact the world.</p>
+              <p>We launch consumer-centric products & ventures to impact the world.</p>
               <a className="button-dark" href="#about">Learn more</a>
             </div>
             <img src="/img/illustrations/header.jpg" />
@@ -62,7 +62,7 @@ const index = () => {
 
       <div className="logo-banner">
         <div className="container">
-          <div className="label">Trusted by users from</div>
+          <div className="label">Trusted by</div>
           <div className="logo-grid">
 
             <img className="fiveable" src="https://s3.amazonaws.com/thinkific-import/203332/jDEhZAZRRqWyfyXqELJO_fiveable_gray_png" />
@@ -74,35 +74,27 @@ const index = () => {
         </div>
       </div>
 
-      {
-        // <div className="container py-4">
-        //   <div className="stats-grid">
-        //     <div className="stat">
-        //       <span className="title">Commits</span>
-        //       <span className="number">3,000+</span>
-        //     </div>
-        //     <div className="stat">
-        //       <span className="title">Users</span>
-        //       <span className="number">1,500+</span>
-        //     </div>
-        //     <div className="stat">
-        //       <span className="title">Products</span>
-        //       <span className="number">{products.length}</span>
-        //     </div>
-        //   </div>
-        // </div>
-      }
-
       <section id="about">
         <div className="container">
-          <div className="about-grid split-grid">
-            <img src="/img/illustrations/about.jpg" />
-            <div>
-              <h1 className="header-secondary">We launch impactful products.</h1>
-              <p>Our mission is to build, deploy, and scale the world's most impactful consumer-based and B2C SaaS products.</p>
-              <p>We ideate, incubate, and accelerate startup ideas, garner a sense of growth, and constantly ship things to market.</p>
+          <div className="about-container">
+            <h1 className="header-secondary">We love consumers.</h1>
+            <p style={{ fontSize: "18.5px" }}>We ideate, incubate, and accelerate consumer-centric products through head-on development and organic growth. Our mission is to launch the world's most impactful ventures to a massive scale.</p>
+          </div>
 
-              <a className="button-dark" href="#products">Our products</a>
+          <div className="container mt-5 py-2">
+            <div className="stats-grid">
+              <div className="stat">
+                <span className="title label">People reached</span>
+                <span className="number">500,000+</span>
+              </div>
+              <div className="stat">
+                <span className="title label">Users</span>
+                <span className="number">20,000+</span>
+              </div>
+              <div className="stat">
+                <span className="title label">Acquisitions</span>
+                <span className="number">4</span>
+              </div>
             </div>
           </div>
         </div>

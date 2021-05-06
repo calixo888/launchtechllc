@@ -12,17 +12,17 @@ header {
   }
 }
 
+.label {
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #aaa;
+  // margin-bottom: 15px;
+}
+
 .logo-banner {
   // background-color: #f3f3f3;
   padding-top: 15px;
-
-  .label {
-    font-size: 14px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #aaa;
-    // margin-bottom: 15px;
-  }
 
   .logo-grid {
     display: flex;

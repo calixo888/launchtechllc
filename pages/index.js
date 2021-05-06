@@ -62,13 +62,13 @@ const index = () => {
 
       <div className="logo-banner">
         <div className="container">
-          <div className="label">Trusted by people from</div>
+          <div className="label">Trusted by users from</div>
           <div className="logo-grid">
 
-            <img className="morningbrew" src="/img/banner/morningbrew.png" />
+            <img className="fiveable" src="https://s3.amazonaws.com/thinkific-import/203332/jDEhZAZRRqWyfyXqELJO_fiveable_gray_png" />
             <img className="daily" src="https://assets.website-files.com/59c9811db5fc1c0001445dbd/5f74ce452bcdfe0d2cd6d4e0_logo-daily.svg" />
+            <img className="morningbrew" src="/img/banner/morningbrew.png" />
             <img className="stanford" src="/img/banner/stanford.png" />
-            <img className="erevna" src="/img/banner/erevna.png" />
             <img className="tks" src="/img/banner/tks.png" />
           </div>
         </div>

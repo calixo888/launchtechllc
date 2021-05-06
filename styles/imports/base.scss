@@ -49,6 +49,24 @@ svg {
   }
 }
 
+.alert-banner {
+  background-color: $color-primary;
+  padding: 10px 0;
+  text-align: center;
+
+  & p {
+    color: white;
+    margin-bottom: 0;
+    font-size: 17px;
+  }
+
+  & a {
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+}
+
 .tags {
   display: flex;
   flex-direction: row;

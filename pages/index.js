@@ -21,6 +21,12 @@ const index = () => {
         description="Launch Tech LLC ideates, incubates, and accelerates consumer-centric products through head-on development and organic growth. Our mission is to launch the world's most impactful ventures to a massive scale."
       />
 
+      <div className="alert-banner">
+        <div className="container">
+          <p>🔥 Hours has officially been acquired by Fiveable! <a href="#" target="_blank">Read more &rarr;</a>  🔥</p>
+        </div>
+      </div>
+
       <nav className="navbar navbar-expand-sm navbar-light">
         <div className="container">
           <a href="/" className="navbar-brand">

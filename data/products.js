@@ -1,24 +1,24 @@
 export default [
   {
     title: "Hours",
-    description: "The best virtual studying platform for students, helping them to create study sessions with their friends.",
+    description: "The #1 virtual studying platform for students, helping them to create study sessions with their friends.",
     link: "https://hours.zone",
     tags: [
       "Node.js", "Express", "Next.js", "React.js", "Socket.io", "MongoDB", "Sass"
     ],
-    featured: true,
-    acquired: false,
+    featured: false,
+    acquired: true,
     tag1: {
-      value: "5k+",
+      value: "18k+",
       label: "users"
     },
     tag2: {
-      value: "14.5k+",
+      value: "50k+",
       label: "sessions created"
     },
     tag3: {
-      value: "v2.21",
-      label: "latest release"
+      value: "230k+",
+      label: "tasks completed"
     },
     tag4: {
       value: "Oct 2020",
@@ -88,7 +88,7 @@ export default [
     }
   },{
     title: "w3hacks",
-    description: "A platform where anyone can learn to code through real-world practices.",
+    description: "Teaching anyone to code through learning by doing, real-world practices, and iterative learning.",
     link: "http://w3hacks.com/",
     tags: [
       "Python", "Django", "PostgreSQL", "Sass", "Handlebars"
@@ -112,8 +112,39 @@ export default [
       label: "started"
     },
     colors: {
-      primary: "#212529",
-      secondary: "#1c1f22"
+      // primary: "#023a70",
+      primary: "#00203F",
+      secondary: "#00203F"
+    }
+  },{
+    title: "Ortexo",
+    description: "Accelerating the student success through tailor-made, niche-based software platforms.",
+    link: "https://ortexo.com/",
+    tags: [
+      "Brand"
+    ],
+    featured: false,
+    acquired: true,
+    tag1: {
+      value: "75+",
+      label: "partners"
+    },
+    tag2: {
+      value: "13",
+      label: "team members"
+    },
+    tag3: {
+      value: "3",
+      label: "products"
+    },
+    tag4: {
+      value: "Apr 2020",
+      label: "started"
+    },
+    colors: {
+      // primary: "#012380",
+      primary: "#00154f",
+      secondary: "#00154f"
     }
   }
 ]

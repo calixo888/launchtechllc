@@ -155,12 +155,14 @@ const index = () => {
                         </div>
                       </h3>
                       <p>{product.description}</p>
-                      <div className="tags">
-                        {product.tags.map((tag, i) => (
-                          <span className="tag">{tag}</span>
-                        ))}
-                      </div>
-                      <a className="button-light mt-3" href={product.link} target="_blank">Check it out</a>
+                      {
+                        // <div className="tags">
+                        //   {product.tags.map((tag, i) => (
+                        //     <span className="tag">{tag}</span>
+                        //   ))}
+                        // </div>
+                      }
+                      <a className="button-light" href={product.link} target="_blank">Check it out</a>
                     </div>
                     <div>
                       <table>

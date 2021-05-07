@@ -23,7 +23,7 @@ const index = () => {
 
       <div className="alert-banner">
         <div className="container">
-          <p>🔥 Hours has officially been acquired by Fiveable! <a href="#" target="_blank">Read more &rarr;</a>  🔥</p>
+          <p>🔥 Hours has officially been acquired by Fiveable! <a href="https://hi.fiveable.me/post/fiveable-acquires-hours-to-bring-virtual-study-rooms-to-students" target="_blank">Read more &rarr;</a>  🔥</p>
         </div>
       </div>
 

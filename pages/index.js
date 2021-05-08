@@ -202,25 +202,24 @@ const index = () => {
               <p>I started Launch Tech for reasons completely different than what it is today.</p>
               <p>Back in January-April 2020, I was building projects furiously. <strong>Anything I learned or anything I wanted to build, I built.</strong></p>
               <p>But, what stayed true throughout the many projects I built was that they were all <strong>real-world, consumer-based applications,</strong> and that's where my passion lies.</p>
-              <p>My mom helped me setup a company to give my projects some legal protection. But, I decided I wanted Launch Tech to be more than just a holding company.</p>
+              <p>I was able to setup a company to give my projects some legal protection. But, I decided I wanted Launch Tech to be more than just a holding company.</p>
               <p>After cycling through many ideas, as well as a failed attempt at one concept, here we are!</p>
             </div>
             <div>
-              <p>Launch Tech is a startup ideater, incubator, and accelerator, and the platform I always dreamed of having.</p>
-              <p>No formal structures, boring business operations, or any of that. Purely ideas, code, and launches, day in day out.</p>
-              <p>I hope that Launch Tech will continue to produce and launch more products into the future, and that users may find it helpful in whatever means available.</p>
+              <p>Launch Tech is a consumer-centric venture ideater, incubator, and accelerator. No formal structures, boring business operations, or any of that. Purely ideas, execution, launches, and exits - day in day out.</p>
+              <p>I hope that Launch Tech will continue to produce and launch more ventures into the future, and that users may find it helpful in whatever means available.</p>
+              <p>Launch Tech will continue to evolve over time, but always with consumers and impact at the front of minds.</p>
 
               <div className="founder mt-3">
                 <img src="/img/people/calix.jpg" alt="Calix Huang - Launch Tech LLC" />
                 <div>
                   <h5 className="header-fourth mb-0">Calix Huang</h5>
-                  <span className="title">Founder</span>
+                  <span className="title">Founder & CEO</span>
                   <div className="social mt-1">
                     <a href="https://www.instagram.com/calixo888/" target="_blank"><FontAwesomeIcon icon={faInstagram}/></a>
                     <a href="https://www.twitter.com/calixo888/" target="_blank"><FontAwesomeIcon icon={faTwitter}/></a>
                     <a href="https://www.linkedin.com/in/calix-huang/" target="_blank"><FontAwesomeIcon icon={faLinkedin}/></a>
-                    <a href="https://github.com/calixo888" target="_blank"><FontAwesomeIcon icon={faGithub}/></a>
-                    <a href="mailto:me@calix.dev" target="_blank"><FontAwesomeIcon icon={faEnvelope}/></a>
+                    <a href="mailto:calix@launchtechllc.com" target="_blank"><FontAwesomeIcon icon={faEnvelope}/></a>
                   </div>
                 </div>
               </div>

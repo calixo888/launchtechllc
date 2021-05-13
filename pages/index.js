@@ -68,14 +68,24 @@ const index = () => {
 
       <div className="logo-banner">
         <div className="container">
-          <div className="label">Trusted by</div>
+          <div className="label">Featured in</div>
           <div className="logo-grid">
 
-            <img className="fiveable" src="https://s3.amazonaws.com/thinkific-import/203332/jDEhZAZRRqWyfyXqELJO_fiveable_gray_png" />
-            <img className="daily" src="https://assets.website-files.com/59c9811db5fc1c0001445dbd/5f74ce452bcdfe0d2cd6d4e0_logo-daily.svg" />
-            <img className="morningbrew" src="/img/banner/morningbrew.png" />
-            <img className="stanford" src="/img/banner/stanford.png" />
-            <img className="tks" src="/img/banner/tks.png" />
+            <a href="https://techcrunch.com/2021/05/12/fiveable-hours-acquisition/" target="_blank">
+              <img className="techcrunch" src="/img/banner/techcrunch.png" />
+            </a>
+            <a href="https://www.morningbrew.com/sidekick/issues/2021/02/22" target="_blank">
+              <img className="morningbrew" src="/img/banner/morningbrew.png" />
+            </a>
+            <a href="https://markets.businessinsider.com/news/stocks/fiveable-acquires-hours-a-virtual-studying-platform-founded-by-a-16-year-old-high-school-junior-1030409076" target="_blank">
+              <img className="businessinsider" src="/img/banner/businessinsider.png" />
+            </a>
+            <a href="https://news.yahoo.com/fiveable-acquires-hours-virtual-studying-122500748.html" target="_blank">
+              <img className="yahoo" src="/img/banner/yahoo.png" />
+            </a>
+            <a href="https://www.crunchbase.com/acquisition/fiveable-acquires-hours--dbad6653" target="_blank">
+              <img className="crunchbase" src="/img/banner/crunchbase.png" />
+            </a>
           </div>
         </div>
       </div>

@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "destination": "https://creoventures.us/$1",
+      "statusCode": 301
+    }
+  ]
+}

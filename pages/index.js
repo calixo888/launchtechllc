@@ -6,7 +6,7 @@ import { faEnvelope, faArrowDown, faExternalLinkAlt } from '@fortawesome/free-so
 import products from '../data/products.js';
 import SwiperCore, { Navigation, Pagination, EffectCoverflow, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
+ 
 SwiperCore.use([Navigation, Pagination, Autoplay, EffectCoverflow]);
 
 const index = () => {
